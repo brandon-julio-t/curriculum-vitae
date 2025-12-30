@@ -22,11 +22,11 @@ curriculum-vitae/
 
 ## WHERE TO LOOK
 
-| Task         | Location                | Notes                     |
-| ------------ | ----------------------- | ------------------------- |
-| Edit Content | `src/cv.latest.tex`     | Principal source file     |
+| Task         | Location                | Notes                         |
+| ------------ | ----------------------- | ----------------------------- |
+| Edit Content | `src/cv.latest.tex`     | Principal source file         |
 | Build Task   | `mise.toml`             | Tasks: `build`, `dist`, `dev` |
-| IDE Logic    | `.vscode/settings.json` | Formatter & Recipe config |
+| IDE Logic    | `.vscode/settings.json` | Formatter & Recipe config     |
 
 ## CODE MAP
 
