@@ -74,8 +74,11 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -87,13 +90,14 @@
 \begin{center}
     \textbf{\Huge \scshape Brandon Julio Thenaro} \\ \vspace{5pt}
     \href{mailto:brandon.julio.t@icloud.com}{\underline{brandon.julio.t@icloud.com}} $|$ 
-    \href{https://linkedin.com/in/brandonjuliothenaro}{\underline{linkedin.com/in/brandonjuliothenaro}}
+    \href{https://linkedin.com/in/brandonjuliothenaro}{\underline{linkedin.com/in/brandonjuliothenaro}} $|$
+    \href{https://github.com/brandon-julio-t}{\underline{github.com/brandon-julio-t}}
 \end{center}
 
 
 %-----------EXPERIENCE-----------
 \section{Work Experiences}
-  \resumeItemListStart
+  \resumeSubHeadingListStart
 
     \resumeSubheading
       {Senior Software Engineer}{May 2024 -- Present}
@@ -135,6 +139,6 @@
         \resumeItem{Orchestrated Laravel web application deployment in Linux server environment to handle up to $\sim$500 users.}
       \resumeItemListEnd
 
-  \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 \end{document}

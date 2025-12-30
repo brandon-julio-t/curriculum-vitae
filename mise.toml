@@ -1,2 +1,10 @@
 [tools]
 tinytex = "latest"
+watchexec = "latest"
+
+[tasks]
+dev = "mise watch dist -w ./src"
+build = "latexmk -pdf -outdir=out src/cv.latest.tex"
+dist = { depends = [
+    "build",
+], run = "mkdir -p dist && cp out/cv.latest.pdf dist/Brandon_Julio_Thenaro_CV.pdf" }
