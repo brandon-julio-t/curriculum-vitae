@@ -21,9 +21,7 @@
   "latex-workshop.latex.recipes": [
     {
       "name": "latexmk 🔃",
-      "tools": [
-        "latexmk"
-      ]
+      "tools": ["latexmk"]
     }
   ]
 }
