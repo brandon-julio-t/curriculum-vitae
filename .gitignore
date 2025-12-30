@@ -1,0 +1,44 @@
+# LaTeX build output
+out/
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc0
+*.nav
+*.nlo
+*.out
+*.pdfsync
+*.ps
+*.snm
+*.synctex.gz
+*.vrb
+*.xdy
+*.tdo
+*.fls
+*.fdb_latexmk
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+*.swp
+*~

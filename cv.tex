@@ -1,0 +1,140 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Brandon Julio Thenaro} \\ \vspace{5pt}
+    \href{mailto:brandon.julio.t@icloud.com}{\underline{brandon.julio.t@icloud.com}} $|$ 
+    \href{https://linkedin.com/in/brandonjuliothenaro}{\underline{linkedin.com/in/brandonjuliothenaro}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experiences}
+  \resumeItemListStart
+
+    \resumeSubheading
+      {Senior Software Engineer}{May 2024 -- Present}
+      {Farmio}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Reduced AWS S3 storage usage by 48\% through file compression, resulting in a 50\% increase in cost savings.}
+        \resumeItem{Lead the design overhaul to use shadcn/ui, modernizing the UI, better frontend performance, and 100\% better developer experience (DX) relative to the old design system.}
+        \resumeItem{Actively participate in collaboration between design and technical teams, implementing an agile feedback loop that reduced iteration cycles and accelerated time-to-market by 25\% for key product features.}
+        \resumeItem{Mentored and provided technical leadership to team developers, resulting in increased sprint velocity, improved code quality and reduced onboarding time for new team members by 50\%.}
+        \resumeItem{Proactively identify, design solution, and resolve system bottlenecks, resulting in a 60\% improvement in application performance.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Software Engineer}{Jul 2023 -- May 2024}
+      {Farmio}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a system that seamlessly integrates OpenAI API with WhatsApp to receive order chat messages and transform them into structured data, reducing order processing time by 30\%.}
+        \resumeItem{Develop three web portals serving as Software-as-a-Service (SaaS) solutions, facilitating B2B interactions for 50+ businesses and handling 100+ daily transactions.}
+        \resumeItem{Actively identifying potential security vulnerabilities and recommending preemptive solutions, effectively fortifying the system against external threats by 40\%.}
+        \resumeItem{Actively participate and contribute in QA activities, enhancing customer satisfaction and reducing bug rates by 15\%.}
+        \resumeItem{Optimized React Native Fastlane CI/CD pipeline by using Github Actions caches, cutting build times by 40\% and accelerating product deployment iteration by 2x.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Engineer (RnD Staff)}{Aug 2021 -- Aug 2023}
+      {Bina Nusantara University}{Jakarta}
+      \resumeItemListStart
+        \resumeItem{Optimized Laravel, Next.js, and Nginx web application by configuring Nginx for performance and using Laravel Octane to scale up to 500 concurrent users and 2.500 average daily active users.}
+        \resumeItem{Enhanced web application deployment process by utilizing Docker and writing deployment shell scripts, resulting in simplified deployment, resulting in increased developer productivity by reducing deployment time up to 70\%.}
+        \resumeItem{Analyzed and fixed slow database queries and algorithms by using proper and proven best practice query technique and data structures, resulting in faster server response time up to 5 seconds.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Full Stack Engineer (Programmer Intern)}{Sep 2021 -- Jul 2022}
+      {Bina Nusantara University}{Jakarta}
+      \resumeItemListStart
+        \resumeItem{Developed a full stack web application that streamlined thesis administration processes such as thesis approval and group forming, resulting in 30\% faster processing time.}
+        \resumeItem{Elevated project maintainability by writing unit tests using PHPUnit, ensuring correct feature functionalities and early bug detection during new feature development, reducing post-release issues by 40\%.}
+        \resumeItem{Orchestrated Laravel web application deployment in Linux server environment to handle up to $\sim$500 users.}
+      \resumeItemListEnd
+
+  \resumeItemListEnd
+
+\end{document}
