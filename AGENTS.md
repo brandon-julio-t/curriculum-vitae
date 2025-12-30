@@ -25,7 +25,7 @@ curriculum-vitae/
 | Task         | Location                | Notes                     |
 | ------------ | ----------------------- | ------------------------- |
 | Edit Content | `src/cv.latest.tex`     | Principal source file     |
-| Build Task   | `mise.toml`             | Tasks: `build`, `dist`    |
+| Build Task   | `mise.toml`             | Tasks: `build`, `dist`, `dev` |
 | IDE Logic    | `.vscode/settings.json` | Formatter & Recipe config |
 
 ## CODE MAP
@@ -61,6 +61,7 @@ curriculum-vitae/
 ```bash
 mise run build  # Compile src/cv.latest.tex to out/
 mise run dist   # Build and publish to dist/Brandon_Thenaro_CV.pdf
+mise run dev    # Continuous build (watch mode)
 ```
 
 ## NOTES
