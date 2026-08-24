@@ -112,8 +112,8 @@
         \resumeItem{Built access, approval, review, and recovery safeguards across 20+ high-risk AI operations, advancing SOC 2 readiness and representing SGD 35K+ in modeled annual security-review capacity.}
         % PostHog evidence: queried 2026-08-24 UTC; Production project 103887; $ai_generation; date range 2026-01-01 to 2026-08-24; filterTestAccounts=false. Raw totals: 159,399 generations and 531,859,178 cache-read input tokens. Cost model uses the conservative public 500M lower bound and regular US$5.00/M uncached vs US$0.50/M cached input rates: 500 * (5.00 - 0.50) = US$2,250 gross read-side avoidance; cache writes excluded, so this is not net savings.
         \resumeItem{Operated AI systems for 24/7 order intake, supplier operations, and on-demand business analysis across 150K+ model generations, using caching to keep 500M+ repeated input tokens 90\% cheaper.}
-        % PostHog evidence: queried 2026-08-24 UTC; Production project 103887; $pageview; date range 2026-01-01 to 2026-08-24; filterTestAccounts=false. Raw totals: 826,936 pageviews and 2,674 unique users.
-        \resumeItem{Own architecture and delivery for Farmio's Singapore and Hong Kong platform, which surpassed 826K pageviews from 2,600+ users by August 2026 across ordering, inventory, fulfillment, invoicing, payments, analytics, and AI-assisted operations.}
+        % Production OLAP evidence: queried read-only through Metabase database 2 on 2026-08-24; date range 2025-11-01 inclusive to 2026-08-25 exclusive; Order.deletedAt IS NULL; Order.status <> cancelled. Raw totals: 48,927 orders, 2 active market suppliers, 1,522 distinct customer accounts, and 1,872 distinct stores. Revenue and gross order value are confidential and intentionally excluded. Leadership scope is supported by the canonical 2026 weekly work-evidence page. Source: https://app.notion.com/p/2dc8efbef0d38018a361c4af67dc1206
+        \resumeItem{Lead architecture, production reviews, and cross-functional decisions across 10 operational areas with product, operations, finance, and commercial teams; Farmio's Singapore and Hong Kong platform processed 48K+ customer orders from 1,500+ customer accounts across 1,800+ stores during the role.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -135,7 +135,8 @@
       {Farmio}{Singapore (Remote)}
       \resumeItemListStart
         \resumeItem{Built Farmio's first OpenAI-powered WhatsApp order-intake workflow, providing 24/7 availability; equivalent continuous human coverage would require 3.8 full-time schedules and SGD 152K in annual base pay.}
-        \resumeItem{Standardized 7 supplier/admin onboarding workflows and expanded digital ordering through 5 core mobile journeys spanning cart, checkout, review, drafts, and order details.}
+        % Production OLAP evidence: queried read-only through Metabase database 2 on 2026-08-24; date range 2023-07-01 inclusive to 2024-06-01 exclusive; Order.deletedAt IS NULL; Order.status <> cancelled; Order.channel = whatsapp_powered_by_ai. Raw totals: 2,754 orders, 269 distinct customer accounts, and 273 distinct stores. Weekly evidence records the delivered WhatsApp onboarding, retailer payment-method, and MSRP pricing controls. Sources: https://app.notion.com/p/337e19eb8372438695d36266fa96b6b4 ; https://app.notion.com/p/72e8267916ee4c6fb5958a7c9186dff1
+        \resumeItem{Expanded AI-assisted ordering with onboarding, payment, and pricing controls, supporting 2,700+ customer orders from 260+ customer accounts across 270+ stores during the role.}
         % Verified 2023 task PRO-576 documents shared authentication across 3 portals and a high-priority flaw in which a supplier session could enter the admin portal and view or modify 4 explicitly named areas: orders, categories, invoices, and payments. The fix added portal-specific token-type validation. Source: https://app.notion.com/p/a98da75d11d4453a931aafa88e245628
         \resumeItem{Secured 3 portals by closing a high-priority authorization flaw that let supplier sessions view or change 4 sensitive admin areas---orders, categories, invoices, and payments.}
       \resumeItemListEnd

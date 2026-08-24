@@ -12,6 +12,7 @@ Act as Brandon's business manager, not merely a copy editor. Make deliberate cho
 - Do not force a number into every bullet. A clear business outcome or decision-making scope is stronger than an irrelevant metric.
 - Use pageviews, active-user counts, and other running metrics only when they are current, meaningful to the target role, and dated or refreshable.
 - For running metrics, record the exact query date and filters in working notes, then round down to a conservative lower bound that remains true as usage grows.
+- Keep exclusion logic such as cancelled, deleted, or test records in evidence notes. In the CV, describe the positively counted population with plain nouns such as "customer orders" unless a status label adds real business meaning.
 - Preserve enough technical depth to satisfy engineering leaders without making HR decode implementation jargon.
 
 ## Default workflow
@@ -111,6 +112,9 @@ It is acceptable to combine verified delivery with external benchmarks and Brand
 ## Quantification and financial modeling
 
 Use measured company data when available. When accounting data is unavailable, conservative financial modeling is allowed and encouraged.
+
+- Farmio production OLAP data may be probed read-only through the approved Metabase path documented in `farmio-service/docs/PROD_DB_READ_ONLY_ACCESS_METABASE.md`. Use aggregate-only queries with tight date and status filters; never expose credentials, customer identifiers, or row-level business data.
+- Treat Farmio revenue, GMV, gross order value, payment value, and other financial transaction totals as confidential. Do not place them in the CV, comments, evidence notes, or handoff. Prefer non-financial commercial scale such as orders, customer accounts, stores, invoices, markets, and operational areas.
 
 For every modeled result:
 
