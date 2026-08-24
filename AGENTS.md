@@ -18,7 +18,7 @@ Act as Brandon's business manager, not merely a copy editor. Make deliberate cho
 ## Default workflow
 
 1. Use the current LinkedIn profile only as the starting baseline when resetting or rebuilding the CV.
-2. After Brandon approves an updated CV, treat the CV as the source of truth. Future LinkedIn and website updates should follow the approved CV, not overwrite it with older profile copy.
+2. After Brandon approves an updated CV, treat its verified claims and evidence as the factual source of truth. The one-page CV is intentionally distilled; LinkedIn and the website may expand those facts with additional approved context and achievements rather than copying the CV word for word. Never let older profile copy overwrite newer CV evidence.
 3. Keep achievements under the role and date range in which they happened. Never move evidence into a more senior role merely because it sounds stronger there.
 4. Edit `src/cv.latest.tex`, build the PDF locally, and inspect the rendered result visually.
 5. Keep changes local. Do not commit, push, publish, or update LinkedIn/the website unless Brandon explicitly asks.
