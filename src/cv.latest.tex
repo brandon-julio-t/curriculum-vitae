@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -94,53 +94,82 @@
     \href{https://github.com/brandon-julio-t}{github.com/brandon-julio-t}
 \end{center}
 
-
 %-----------EXPERIENCE-----------
-\section{Work Experiences}
+\section{Work Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Senior Software Engineer}{May 2024 -- Present}
-          {Farmio}{Singapore}
+      {Technical Lead, AI \& Platform}{Nov 2025 -- Present}
+      {Farmio}{Singapore (Remote)}
       \resumeItemListStart
-        \resumeItem{Architected and implemented S3 storage optimization pipeline, reducing costs by 48\% and saving \$180K annually while maintaining 99.99\% data durability.}
-        \resumeItem{Led end-to-end frontend modernization initiative, migrating legacy design system to shadcn/ui; achieved 100\% improvement in Core Web Vitals and 3x developer velocity.}
-        \resumeItem{Orchestrated cross-functional collaboration between design, product, and engineering teams, establishing agile feedback loops that accelerated feature delivery by 25\% and reduced iteration cycles from 2 weeks to 10 days.}
-        \resumeItem{Established technical mentorship program, coaching 4 junior engineers; 2 promoted to mid-level within 18 months, reducing team onboarding time by 50\%.}
-        \resumeItem{Diagnosed and resolved critical system bottlenecks in order processing pipeline, implementing distributed caching strategy that improved throughput by 60\% and reduced P99 latency from 2.3s to 800ms.}
+        % PostHog evidence: queried 2026-08-24 UTC; Production project 103887; $pageview; date range 2026-01-01 to 2026-08-24; filterTestAccounts=false. Raw totals: 826,936 pageviews and 2,674 unique users.
+        \resumeItem{Own architecture and delivery for Farmio's Singapore and Hong Kong platform, which surpassed 826K pageviews from 2,600+ users by August 2026 across ordering, inventory, fulfillment, invoicing, payments, analytics, and AI-assisted operations.}
+        % Verified delivery: Invoisus processed 300+ invoice PDFs in under 30 minutes; the connected Farmio export workflow completed a crash-free 514+ PDF bulk run. Management-planning model from the canonical 2026 weekly work-evidence page: SGD 8,160 annual finance capacity + SGD 12,000 support/engineering interruption cost avoided + SGD 15,000 expected late-submission penalty exposure avoided + SGD 518 annual financing cost avoided = SGD 35,678 modeled annual business value, rounded down to SGD 35K+. Source: https://app.notion.com/p/2dc8efbef0d38018a361c4af67dc1206
+        \resumeItem{Delivered an S\&F invoice workflow representing SGD 35K+ in modeled annual value across finance capacity, support interruptions, late-submission penalties, and financing costs; processed 300+ PDFs in under 30 minutes and completed a crash-free 514+ PDF bulk export.}
+        \resumeItem{Strengthened billing and audit controls across Singapore and Hong Kong by migrating 85K+ historical invoices and coordinating a pricing cutover across 5 revenue-facing systems.}
+        % Verified delivery: reusable tenant authorization, human confirmation, reviewable execution, and recovery controls across 20+ high-risk AI operations. User-approved planning scenario: allocate 0.25 FTE to recurring security review and remediation. Singapore MOM Occupational Wages 2025 reports median gross monthly pay of SGD 10,495 for cyber-risk specialists; conservative employer cost adds only 17% CPF on the 2025 SGD 7,400 monthly wage ceiling, for SGD 11,753/month. Base case: 11,753 * 12 * 25% = SGD 35,259, rounded down to SGD 35K+. 50% downside: SGD 17,630. The delivered controls contribute specifically to SOC 2 logical-access and processing-integrity readiness; they do not establish certification or eliminate broad consulting work. Sources: https://stats.mom.gov.sg/Pages/Occupational-Wages-Tables2025.aspx ; https://www.cpf.gov.sg/service/article/what-is-the-ordinary-wage-ow-ceiling ; https://www.cpf.gov.sg/employer/employer-obligations/how-much-cpf-contributions-to-pay
+        \resumeItem{Modeled SGD 35K+ in annual security-review capacity---one-quarter of a Singapore cyber-risk specialist---by embedding SOC 2-aligned access, approval, review, and recovery controls across 20+ high-risk AI operations.}
+        % PostHog evidence: queried 2026-08-24 UTC; Production project 103887; $ai_generation; date range 2026-01-01 to 2026-08-24; filterTestAccounts=false. Raw totals: 159,399 generations and 531,859,178 cache-read input tokens. Cost model uses the conservative public 500M lower bound and regular US$5.00/M uncached vs US$0.50/M cached input rates: 500 * (5.00 - 0.50) = US$2,250 gross read-side avoidance; cache writes excluded, so this is not net savings.
+        \resumeItem{Scaled WhatsApp Ordering AI and Kokopilot and built the Eve supplier agent across 150K+ LLM generations; caching 500M+ input tokens cut read pricing by 90\%, representing US\$2.25K in modeled gross input-cost avoidance at regular rates.}
+        % Verified scope: 6-service platform; rollback-safe AWS delivery in staging and production; parallel checks; managed observability; retired manual delivery paths and unused compute. User-approved planning scenario: 16 releases/month * 0.4 workday (3.2 hours) of manual work avoided * 2 engineering touchpoints * 12 months * SGD 47.55 loaded developer-hour = SGD 58,429 annual engineering capacity, rounded down further to SGD 55K+. 50% downside: SGD 29,215. The loaded rate uses MOM's SGD 7,808 median gross monthly software-developer wage plus 17% employer CPF on the 2025 SGD 7,400 monthly wage ceiling. Outage risk is directionally reduced by rollback and observability but is not monetized without Farmio incident probability and severity. Sources: https://app.notion.com/p/2dc8efbef0d38018a361c4af67dc1206 ; https://stats.mom.gov.sg/Pages/Occupational-Wages-Tables2025.aspx ; https://www.cpf.gov.sg/service/article/what-is-the-ordinary-wage-ow-ceiling ; https://www.cpf.gov.sg/employer/employer-obligations/how-much-cpf-contributions-to-pay
+        \resumeItem{Modeled SGD 55K+ in annual engineering capacity by removing 6.4 engineer-hours per release at a 16-release/month planning cadence; automated rollback-safe AWS delivery and observability across 6 services to reduce release-related outage exposure.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Software Engineer}{Jul 2023 -- May 2024}
-      {Farmio}{Singapore}
+      {Senior Software Engineer}{May 2024 -- Oct 2025}
+      {Farmio}{Singapore (Remote)}
       \resumeItemListStart
-        \resumeItem{Engineered AI-powered order processing system integrating OpenAI API with WhatsApp Business API, transforming unstructured chat messages into structured orders and reducing manual processing time by 30\%, saving 20+ engineering hours weekly.}
-        \resumeItem{Designed and built 3 B2B SaaS portals from ground up, serving 50+ enterprise clients with 100+ daily transactions; architected multi-tenant architecture handling peak loads of 500 concurrent users with 99.9\% uptime.}
-        \resumeItem{Conducted security audit identifying 12 critical vulnerabilities in payment flows and authentication systems; implemented remediation measures that reduced attack surface by 40\% and achieved SOC2 compliance readiness.}
-        \resumeItem{Drove QA automation initiative, establishing testing frameworks that reduced production bug rate by 15\% and improved customer satisfaction scores from 4.1 to 4.6/5.0.}
-        \resumeItem{Optimized React Native CI/CD pipeline using GitHub Actions caching strategies, cutting build times by 40\% from 25 minutes to 15 minutes and accelerating release cycles from weekly to daily deployments.}
+        % Canonical 2025 work evidence: teaching and standardizing Convex reduced a representative real-time feature from approximately 3 weeks (15 workdays) to 2--3 days; use a 2.5-day midpoint, yielding 12.5 workdays or 100 hours released per feature at 8 hours/day. Management-planning cadence: 2 comparable real-time features/month across the team, or 24/year. Singapore MOM Occupational Wages 2025 reports a median gross monthly wage of SGD 7,808 for software developers. Conservative employer cost adds only 17% employer CPF on the 2025 SGD 7,400 monthly Ordinary Wage ceiling: 7,808 + (7,400 * 17%) = SGD 9,066/month; 9,066 * 12 / (44 * 52) = SGD 47.55/hour. Annual modeled capacity: 100 hours * 24 features * 47.55 = SGD 114,120, rounded down to SGD 110K+. This is a management-planning capacity model, not realized cash savings. Sources: https://app.notion.com/p/2af8efbef0d380a3bbe9f9622a0288ad ; https://stats.mom.gov.sg/Pages/Occupational-Wages-Tables2025.aspx ; https://www.cpf.gov.sg/service/article/what-is-the-ordinary-wage-ow-ceiling ; https://www.cpf.gov.sg/employer/employer-obligations/how-much-cpf-contributions-to-pay
+        \resumeItem{Modeled SGD 110K+ in annual real-time-feature capacity by teaching and standardizing Convex, cutting representative implementation from 3 weeks to 2--3 days.}
+        \resumeItem{Owned delivery across 10 operational domains as Farmio expanded from 1 to 2 markets---Singapore and Hong Kong---working with 4 business functions: product, operations, finance, and commercial.}
+        % Canonical 2025 work evidence records the October AI SDK 5 migration: 3--4 monthly production incidents before the migration, zero over the subsequent observed months, response time reduced from 2--3 seconds to under 1 second, and AI feature delivery accelerated 2--3x. Source: https://app.notion.com/p/2af8efbef0d380a3bbe9f9622a0288ad
+        \resumeItem{Modernized the WhatsApp AI runtime, reducing production incidents from 3--4 per month to zero over subsequent months, cutting response time from 2--3 seconds to under 1 second, and accelerating AI feature delivery 2--3x.}
+        % Canonical 2025 work evidence records 25--50% faster screen implementation and 60--70% less custom CSS after the design-system migration. Separate repository evidence supports 30+ reusable components and consolidation of two duplicate pre-release runs into one. Source: https://app.notion.com/p/2af8efbef0d380a3bbe9f9622a0288ad
+        \resumeItem{Standardized 30+ reusable interface components, cutting new-screen delivery time by 25--50\% and custom CSS work by 60--70\%; separately consolidated 2 duplicate pre-release runs into 1 per change to reduce cloud waste.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Full Stack Engineer (RnD Staff)}{Aug 2021 -- Aug 2023}
+      {Software Engineer \textbar{} Full-Stack \& AI Systems}{Jul 2023 -- May 2024}
+      {Farmio}{Singapore (Remote)}
+      \resumeItemListStart
+        \resumeItem{Built Farmio's first OpenAI-powered WhatsApp order-intake workflow, providing 24/7 availability; equivalent continuous human coverage would require 3.8 full-time schedules and SGD 152K in annual base pay.}
+        \resumeItem{Standardized 7 supplier/admin onboarding workflows and expanded digital ordering through 5 core mobile journeys spanning cart, checkout, review, drafts, and order details.}
+        % Verified 2023 task PRO-576 documents shared authentication across 3 portals and a high-priority flaw in which a supplier session could enter the admin portal and view or modify 4 explicitly named areas: orders, categories, invoices, and payments. The fix added portal-specific token-type validation. Source: https://app.notion.com/p/a98da75d11d4453a931aafa88e245628
+        \resumeItem{Secured 3 portals by closing a high-priority authorization flaw that let supplier sessions view or change 4 sensitive admin areas---orders, categories, invoices, and payments.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Engineer as Research and Development Staff}{Aug 2021 -- Aug 2023}
       {Bina Nusantara University}{Jakarta}
       \resumeItemListStart
-        \resumeItem{Spearheaded performance optimization of Laravel and Next.js applications, implementing Nginx tuning and Laravel Octane migration; scaled system to handle 500 concurrent users and 2,500 daily active users with sub-200ms response times.}
-        \resumeItem{Established containerized deployment infrastructure using Docker, reducing deployment time from 3 hours to 45 minutes and eliminating environment inconsistencies across development, staging, and production.}
-        \resumeItem{Conducted database optimization initiative, refactoring 50+ slow queries and implementing indexing strategy; reduced average server response time by 5 seconds and improved throughput by 3x.}
-        \resumeItem{Designed and implemented real-time notification system using WebSockets, enabling instant updates for 2,500+ active users and increasing engagement metrics by 35\%.}
+        \resumeItem{Scaled university platforms to 500 concurrent and 2,500 average daily users while cutting deployment time by up to 70\% and server response time by up to 5 seconds.}
+        \resumeItem{Built operational workflows used across 20 laboratories by 300 users, improving internal efficiency by up to 25\%.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Full Stack Engineer (Programmer Intern)}{Sep 2021 -- Jul 2022}
+      {Full Stack Engineer}{Sep 2021 -- Jul 2022}
       {Bina Nusantara University}{Jakarta}
       \resumeItemListStart
-        \resumeItem{Developed end-to-end thesis administration platform using Laravel and MySQL, streamlining approval workflows and group formation; reduced processing time by 30\% and eliminated paper-based processes for 500+ students annually.}
-        \resumeItem{Established testing culture by implementing PHPUnit test suites achieving 75\% code coverage; detected 40\% of bugs pre-release and reduced post-deployment issues by 35\%.}
-        \resumeItem{Architected Linux server deployment infrastructure with Nginx and Supervisor, implementing CI/CD pipelines that enabled zero-downtime deployments for 500 concurrent users.}
-        \resumeItem{Led technical documentation initiative, creating developer guides and API documentation that reduced onboarding time for subsequent team members by 25\%.}
+        \resumeItem{Built a thesis-administration platform for up to 500 users, cutting approval processing time by 30\%; added PHPUnit coverage that reduced post-release issues by 40\%.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {BINUS University}{2019 -- 2023}
+      {Bachelor of Computer Science in Information Systems}{Jakarta}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages, Frameworks \& Data}{: TypeScript, React, Next.js, Effect, Elysia, tRPC, PostgreSQL, Convex} \\
+      \textbf{AI \& Platform}{: OpenAI, AWS, OpenTofu, Redshift, Metabase, OpenTelemetry, CI/CD}
+    }}
+  \end{itemize}
 
 \end{document}
