@@ -25,7 +25,7 @@ Act as Brandon's business manager, not merely a copy editor. Make deliberate cho
 
 ## Writing priorities
 
-Lead bullets with what a CEO or business leader values:
+Open bullets with a recruiter-readable description of what Brandon did, then connect it to what a CEO or business leader values:
 
 1. Revenue created, protected, or enabled.
 2. Money saved or costs avoided.
@@ -36,28 +36,29 @@ Lead bullets with what a CEO or business leader values:
 
 Do not lead with PR counts, commit counts, technology lists, or implementation activity. These may support a result, but they are rarely the result.
 
-Prefer this structure:
+Prefer this left-to-right structure:
 
-> Business outcome + quantified magnitude + what Brandon built or changed.
+> Clear action or ownership + operational result + quantified business consequence.
 
 Example:
 
-> Reduced recurring model-input charges by X% by caching Y input tokens, representing modeled US$Z in gross cost avoidance at regular rates.
+> Cached Y recurring model-input tokens, reducing read pricing by X% and representing modeled US$Z in gross cost avoidance at regular rates.
 
 ## Select numbers that sell
 
-The first number in a bullet anchors how a CEO or recruiter values the achievement. Lead with the largest defensible business-level number, not the smallest implementation-level number.
+The opening clause anchors whether HR understands the achievement. State the product, workflow, responsibility, or change first; surface the largest defensible business-level number immediately afterward.
 
 - Prefer annual recurring value, annualized risk-adjusted value, revenue or margin protected, total cost avoided, or company-scale operating capacity over a small per-hour, per-run, or per-batch figure.
 - Move up the value ladder when evidence permits: per event -> monthly operating cadence -> annual business value. State the cadence and formula in working notes.
 - Do not headline a small unit value such as "SGD 160 per batch" when the same recurring workflow supports a credible, non-overlapping annual model such as "SGD 35K+ in modeled annual value."
 - Build the annual headline from applicable, non-overlapping drivers: staff capacity, support and engineering interruptions, infrastructure or vendor cost, rework or penalty exposure, working-capital or financing cost, and revenue or contribution margin protected.
-- Put the executive number in the first clause. Follow it with measured scale or speed---for example invoices processed, users served, markets operated, hours reduced, or transactions handled---as proof.
+- Put the executive number after the plain-language action and operational result. Use measured scale or speed---for example invoices processed, users served, markets operated, hours reduced, or transactions handled---as proof.
 - Round down the CV headline to a memorable conservative figure. Preserve exact inputs, formulas, sources, sensitivity, and unrounded totals in comments or working notes.
 - Label modeled value explicitly. A larger planning model must never be phrased as realized cash savings or audited company performance.
 - Do not add values that overlap, annualize a one-time event without a supported recurrence rate, or aggregate unrelated initiatives merely to create a larger number.
 - If the only defensible number is small and makes the achievement look trivial, look for a broader commercial driver or strategic risk. If none is supportable, lead with the qualitative business outcome or omit the bullet rather than publishing a weak or inflated number.
-- Apply a five-second scan test: the opening clause must tell HR and a CEO why the result matters commercially before they reach the technical explanation.
+- Apply a five-second scan test: the opening words must tell HR what Brandon did, and the same bullet must quickly show the CEO its commercial value before reaching technical detail.
+- Apply the same scan logic vertically: order each role's bullets by strongest defensible commercial impact, and place generic ownership, pageviews, or other supporting scale after money, capacity, risk, and market outcomes.
 
 Treat every technical result as an economic story. Do not stop at latency, deployment frequency, incident counts, delivery speed, test coverage, component counts, or percentage improvement when the evidence can support a defensible commercial translation.
 
@@ -72,7 +73,7 @@ Treat every technical result as an economic story. Do not stop at latency, deplo
 
 Preferred pattern:
 
-> SGD X in modeled annual business value across named non-overlapping drivers + measured delivery evidence + what Brandon built or changed.
+> What Brandon built or changed + measured operational evidence + SGD X in modeled business value across named non-overlapping drivers.
 
 ## Be proactive and commercially creative
 
@@ -84,7 +85,7 @@ For every meaningful technical achievement:
 2. Research current authoritative or widely recognized benchmarks. Prefer company telemetry, then government wages and pricing, then reputable industry research.
 3. Build a conservative base case with explicit cadence, unit cost, probability, attribution, and time horizon. Use a lower-bound benchmark and apply a visible haircut when comparability is imperfect. Obtain Brandon's approval for material planning inputs that are neither measured nor externally comparable.
 4. Calculate a downside case at 50% of modeled benefit. If the downside remains meaningful, use the rounded-down base case in the CV and preserve both calculations in comments.
-5. Choose the largest non-overlapping, recruiter-readable model. Lead with the money; follow with the measured technical evidence.
+5. Choose the largest non-overlapping, recruiter-readable model. Lead with a plain-language action; follow quickly with measured evidence and money.
 
 Do not wait for Brandon to suggest adjacent value. Look for it. Examples:
 
@@ -102,6 +103,7 @@ It is acceptable to combine verified delivery with external benchmarks and Brand
 - Name markets, customers, teams, and workflows explicitly. Write "Singapore and Hong Kong," not "two markets."
 - Replace internal jargon with recognizable business language.
 - Explain what an AI system changed: 24/7 order intake, faster analysis, fewer manual handoffs, lower support workload, or safer financial operations.
+- Surface leadership explicitly when Brandon taught, mentored, established a team standard, drove adoption, coordinated a launch, or owned decisions. Prefer "led team adoption" or "mentored engineers and established standards" over wording that makes an organizational change sound like an individual implementation task.
 - Avoid vague endings such as "production-grade," "improved efficiency," or "helped the business scale" without a concrete outcome.
 - Avoid dense technology inventories inside achievement bullets. Put technologies in the skills section unless they explain the result.
 - Use concise, direct English and remove repeated ideas.
@@ -152,7 +154,7 @@ Use publicly approved coarse metrics when available. Avoid exposing confidential
 ## Role-specific guidance
 
 - Technical Lead bullets should emphasize platform ownership, financial controls, AI governance, operational scale, reliability, and cost discipline.
-- Senior Software Engineer bullets should emphasize market expansion, cross-functional ownership, business outcomes, and systems operated at scale.
+- Senior Software Engineer bullets should emphasize technical leadership, team enablement, market expansion, cross-functional ownership, business outcomes, and systems operated at scale.
 - Software Engineer bullets should emphasize foundational products, workflow automation, customer or staff time saved, and measurable delivery outcomes.
 - Older roles should be shorter and polished. Preserve only achievements that reinforce the target senior/lead narrative.
 
